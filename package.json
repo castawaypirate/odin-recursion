@@ -1,0 +1,23 @@
+{
+  "name": "odin-recursion",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/castawaypirate/odin-recursion#readme",
+  "bugs": {
+    "url": "https://github.com/castawaypirate/odin-recursion/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castawaypirate/odin-recursion.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}
