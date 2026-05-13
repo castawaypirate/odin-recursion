@@ -1,4 +1,4 @@
-const mergeSort = function (arr, start, end) {
+const mergeSort = function (arr, start = 0, end = arr.length - 1) {
   if (start >= end) {
     return;
   }
@@ -43,7 +43,7 @@ const merge = function (arr, start, mid, end) {
 };
 
 let u = [3, 1, 2, 1234, 43, 341234, 434, 2, 4, 41234, 4, 5555, 1342, 3434343];
-let s = mergeSort(u, 0, u.length - 1);
+let s = mergeSort(u);
 console.log(s);
 
 module.exports = mergeSort;
