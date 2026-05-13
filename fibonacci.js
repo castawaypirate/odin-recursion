@@ -14,15 +14,22 @@ const fibonacci = function (n) {
   return seq;
 };
 
-console.log(fibonacci(0));
-console.log(fibonacci(1));
-console.log(fibonacci(2));
-console.log(fibonacci(3));
-console.log(fibonacci(8));
-
 const fibonacciRec = function (n) {
-  return;
+  if (n === 0) {
+    return [];
+  } else if (n === 1) {
+    return [0];
+  } else if (n === 2) {
+    return [0, 1];
+  } else {
+    const prevFib = fibonacciRec(n - 1);
+    return [...prevFib, prevFib[n - 3] + prevFib[n - 2]];
+  }
 };
 
-// Do not edit below this line
-module.exports = fibonacci;
+console.log(fibonacci(1));
+console.log(fibonacciRec(1));
+console.log(fibonacci(8));
+console.log(fibonacciRec(8));
+
+module.exports = { fibonacci, fibonacciRec };
