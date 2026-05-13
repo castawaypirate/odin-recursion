@@ -6,7 +6,7 @@ Solving the classic Fibonacci and Merge Sort problems using recursion in JavaScr
 Execute the files directly using Node.js:
 ```bash
 node fibonacci.js
-node mergeSort.js
+node merge-sort.js
 ```
 
 ## Running the tests
@@ -20,5 +20,5 @@ npm install
 2. Run the test suites individually:
 ```bash
 npm test fibonacci.spec.js
-npm test mergeSort.spec.js
+npm test merge-sort.spec.js
 ```
